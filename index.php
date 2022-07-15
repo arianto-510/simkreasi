@@ -90,7 +90,7 @@ if (isset($_POST['login'])) {
 
                                         <p class="mb-5 pb-lg-2" style="color: #393f81;">Belum punya akun? <a href="daftar.php" style="color: #393f81;">Register here</a></p>
                                         <a href="#!" class="small text-muted">Terms of use.</a>
-                                        <a href="#!" class="small text-muted">Privacy policy</a>
+                                        <a href="#!" class="small text-muted">Rahasia Polisi</a>
                                     </form>
 
                                 </div>
