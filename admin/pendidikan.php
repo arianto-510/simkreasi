@@ -1,8 +1,8 @@
 <?php
-include '../../koneksi.php';
+include '../koneksi.php';
 ?>
 
-<?php include '../header.php'; ?>
+<?php include 'header.php'; ?>
 <section class="content-header">
     <h1>
         Pendidikan
