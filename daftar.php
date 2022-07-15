@@ -42,7 +42,7 @@ if (isset($_POST['daftar'])) {
         echo "
         <script>
         alert('User Berhasil Dibuat');
-        document.location.href = 'login.php';
+        document.location.href = 'index.php';
         </script>
         ";
     }
