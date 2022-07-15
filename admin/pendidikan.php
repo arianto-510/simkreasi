@@ -1,8 +1,8 @@
 <?php
-include '../koneksi.php';
+include '../../koneksi.php';
 ?>
 
-<?php include 'header.php'; ?>
+<?php include '../header.php'; ?>
 <section class="content-header">
     <h1>
         Pendidikan
@@ -41,7 +41,7 @@ include '../koneksi.php';
                                     <td><?= $p[3]; ?></td>
                                     <td>
 
-                                        <a href="edit_pendidikan.php"><button class="btn btn-warning btn-sm"><i class="glyphicon glyphicon-pencil"></i></button></a>
+                                        <a href="pendidikan/edit_pendidikan.php"><button class="btn btn-warning btn-sm"><i class="glyphicon glyphicon-pencil"></i></button></a>
                                         <a href="pendidikan/hapus_pendidikan.php?id=<?= $p[0]; ?>" onclick="return confirm('Yakin mau dihapus');"><button class="btn btn-danger btn-sm"><i class="glyphicon glyphicon-trash"></i></button></a>
                                     </td>
                                 </tr>
