@@ -2,7 +2,7 @@
 session_start();
 require 'koneksi.php';
 
-if(isset($_SESSION['arianto'])){
+if (isset($_SESSION['arianto'])) {
     header("location: admin/index.php");
 }
 
