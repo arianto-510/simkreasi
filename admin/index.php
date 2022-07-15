@@ -69,7 +69,7 @@ if (!isset($_SESSION['arianto'])) {
         </div>
       </a>
       <!-- ./col -->
-      <a href="#">
+      <a href="penunjang.php">
         <div class="col-lg-3 col-xs-6">
           <!-- small box -->
           <div class="small-box bg-red">
