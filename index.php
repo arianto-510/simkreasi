@@ -12,7 +12,7 @@ if (isset($_POST['login'])) {
 
     $result = mysqli_query($conn, "SELECT * FROM user");
     $u = mysqli_fetch_assoc($result);
-    if ($u['user'] == $user) {
+    if ($user === $u['user']) {
         if (password_verify($pass, $u['password'])) {
             $_SESSION['arianto'] = true;
             echo "
@@ -21,14 +21,14 @@ if (isset($_POST['login'])) {
             document.location.href = 'admin/index.php';
             </script>
             ";
-        } else {
+            exit;
+        }
             echo "
         <script>
         alert('Login Gagal');
         header('login.php');
         </script>
         ";
-        }
     }
 }
 
