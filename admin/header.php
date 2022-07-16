@@ -131,113 +131,28 @@ $u = mysqli_fetch_assoc($result);
           <li>
             <a href="#"> <i class="fa fa-dashboard"></i> <span>dashboard</span> </a>
           </li>
+          
           <li>
-            <a href="#">
-              <i class="fa fa-files-o"></i>
-              <span>Identitas Pegawai</span>
-            </a>
-          </li>
-          <li class="treeview">
-            <a href="#">
-              <i class="fa fa-edit"></i> <span>Riwayat Pegawai</span>
-              <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
-            </a>
-            <ul class="treeview-menu">
-              <li>
-                <a href="#"><i class="fa fa-circle-o"></i> Menu 1</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-circle-o"></i> Menu 2</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-circle-o"></i> Menu 3</a>
-              </li>
-            </ul>
-          </li>
-          <li class="treeview">
-            <a href="#">
-              <i class="fa fa-pie-chart"></i>
-              <span>Laporan Kinerja Dosen</span>
-              <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
-            </a>
-            <ul class="treeview-menu">
-              <li>
-                <a href="#"><i class="fa fa-circle-o"></i> Menu 1</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-circle-o"></i> Menu 2</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-circle-o"></i> Menu 3</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-circle-o"></i> Menu 4</a>
-              </li>
-            </ul>
-          </li>
-          <li class="treeview">
-            <a href="#">
-              <i class="fa fa-laptop"></i>
-              <span>Layanan SKP</span>
-              <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
-            </a>
-            <ul class="treeview-menu">
-              <li>
-                <a href="#"><i class="fa fa-circle-o"></i> Menu 1</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-circle-o"></i> Menu 2</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-circle-o"></i> Menu 3</a>
-              </li>
-            </ul>
-          </li>
-          <li class="treeview">
-            <a href="#">
-              <i class="fa fa-edit"></i> <span>Presensi</span>
-              <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
-            </a>
-            <ul class="treeview-menu">
-              <li>
-                <a href="#"><i class="fa fa-circle-o"></i> Menu 1</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-circle-o"></i> Menu 2</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-circle-o"></i> Menu 3</a>
-              </li>
-            </ul>
+            <a href="pendidikan.php">
+              <i class="ion ion-calendar"></i> <span>Pelaksanaan Pendidikan</span>
+             </a>
           </li>
           <li>
-            <a href="https://adminlte.io/docs"><i class="fa fa-book"></i> <span>Cuti Pegawai</span></a>
+            <a href="penelitian.php">
+              <i class="ion ion-laptop"></i> <span>Pelaksanaan Penelitian</span>
+             </a>
           </li>
-          <li class="treeview">
-            <a href="#">
-              <i class="fa fa-edit"></i> <span>Jurnal WFH</span>
-              <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
-            </a>
-            <ul class="treeview-menu">
-              <li>
-                <a href="#"><i class="fa fa-circle-o"></i> Menu 1</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-circle-o"></i> Menu 2</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-circle-o"></i> Menu 3</a>
-              </li>
+          <li>
+            <a href="pengabdian.php">
+              <i class="ion ion-briefcase"></i> <span>Pelaksanaan Pengabdian</span>
+             </a>
+          </li>
+          <li>
+            <a href="penunjang.php">
+              <i class="ion ion-pie-graph"></i> <span>Penunjang</span>
+             </a>
+          </li>
+          
             </ul>
           </li>
         </ul>
