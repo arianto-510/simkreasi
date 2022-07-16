@@ -53,7 +53,7 @@ include '../koneksi.php';
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <?php $result = mysqli_query($conn, "SELECT * FROM pendidikan");
+                                        <?php $result = mysqli_query($conn, "SELECT * FROM pengabdian");
 
                                         $i = 1;
                                         while ($p = mysqli_fetch_row($result)) :

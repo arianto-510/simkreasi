@@ -57,12 +57,9 @@ if (isset($_POST['tambah'])) {
                                 <tr>
                                     <th scope="row">Unsur Kegiatan</th>
                                     <td>
-                                        <select class="form-control select2 select2-hidden-accessible" id="uns" name="unsur_kegiatan" tabindex="-1" aria-hidden="true">
-                                            <option value="" selected="">--Pilih Unsur Kegiatan--</option>
-                                            <option value="">Menghasilkan karya ilmiah sesuai bidangnya Buku Referensi</option>
-                                            <option value="">Menghasilkan karya ilmiah sesuai bisangnya Monograf</option>
-                                            <option value=""></option>
-                                        </select>
+                                        <select class="form-control select2 select2-hidden-accessible" id="uns" name="uns" required="" tabindex="-1" aria-hidden="true"> 
+                                            
+                          <option value="" selected="">-- Pilih Unsur Kegiatan --</option><option value="">Membuat rancangan dan karya teknologi yang dipatenkan atau seni yang terdaftar di HKI (belum diterapkan atau sudah diterapkan tetapi bukan pada BUMN)</option><option value="">Menghasilkan karya ilmiah sesuai bidangnya Buku Referensi</option><option value="">Menghasilkan karya ilmiah sesuai bidangnya Monograf</option><option value="">Artikel pada jurnal Internasional bereputasi</option><option value="">Artikel pada jurnal Internasional terindeks basis data internasional</option><option value="">Artikel pada jurnal Nasional Terakreditasi</option><option value="">Artikel pada jurnal Nasional</option><option value="">Hasil penelitian atau pemikiran dalam buku yang dipublikasikan Internasional dan berisi berbagai tulisan dari berbagai penulis (book chapter)</option><option value="">Hasil penelitian atau pemikiran dalam buku yang dipublikasikan Nasional dan berisi berbagai tulisan dari berbagai penulis (book chapter)</option></select>
                                         <span class="select2 select2-container select2-container--default select2-container--below select2-container--open" dir="ltr" style="width:877px;">
                                     </td>
                                 </tr>
@@ -112,7 +109,7 @@ if (isset($_POST['tambah'])) {
                             </table>
                             <div class="box-footer">
                                 <!-- <input type="submit" class="btn btn-success" value="Perbaharui Data"> -->
-                                <button type="submit" name="tambah">Tambah Data</button>
+                                <button type="submit" name="tambah" class="btn btn-success">Tambah Data</button>
                                 <a href="penelitian.php" class="btn btn-info pull-right">Kembali</a>
                             </div>
                         </form>
