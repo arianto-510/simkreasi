@@ -6,21 +6,20 @@ if (isset($_SESSION['arianto'])) {
     header("location: admin/index.php");
 }
 
+
+
 if (isset($_POST['login'])) {
     $user = $_POST['user'];
     $pass = $_POST['pass'];
 
-    $result = mysqli_query($conn, "SELECT * FROM user");
+    $result = mysqli_query($conn, "SELECT * FROM user WHERE user = '$user'");
     $u = mysqli_fetch_assoc($result);
-    if ($user === $u['user']) {
+    // var_dump($u);
+    // exit();
+    if ($result) {
         if (password_verify($pass, $u['password'])) {
             $_SESSION['arianto'] = true;
-            echo "
-            <script>
-            alert('Login Berhasil');
-            document.location.href = 'admin/index.php';
-            </script>
-            ";
+            header("Location: admin/index.php");
 
             exit;
         }
@@ -33,6 +32,8 @@ if (isset($_POST['login'])) {
         ";
     }
 }
+
+
 
 
 
@@ -178,7 +179,8 @@ if (isset($_POST['login'])) {
             transform: scale(0.95);
         }
 
-        input, button {
+        input,
+        button {
             background-color: #f6f6f6;
             border: none;
             color: #0d0d0d;
@@ -292,6 +294,13 @@ if (isset($_POST['login'])) {
     <div class="wrapper fadeInDown">
         <div id="formContent">
             <!-- Tabs Titles -->
+            <?php if (isset($_GET['pesan'])) {
+                if ($_GET['pesan'] == 'logout') {
+                    echo "<div class='alert'>Logout berhasil</div>";
+                }
+            }
+            ?>
+
 
             <!-- Icon -->
             <div class="fadeIn first">

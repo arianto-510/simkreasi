@@ -1,5 +1,7 @@
 <?php include '../koneksi.php';
 
+$penelitian = mysqli_query($conn, "SELECT * FROM penelitian");
+
 // tangkap dari form input
 if (isset($_POST['tambah'])) {
     $unsur_kegiatan = $_POST['unsur_kegiatan'];
@@ -59,9 +61,9 @@ if (isset($_POST['tambah'])) {
                                     <td>
                                         <select class="form-control select2 select2-hidden-accessible" id="uns" name="unsur_kegiatan" tabindex="-1" aria-hidden="true">
                                             <option value="" selected="">--Pilih Unsur Kegiatan--</option>
-                                            <option value="">Menghasilkan karya ilmiah sesuai bidangnya Buku Referensi</option>
-                                            <option value="">Menghasilkan karya ilmiah sesuai bisangnya Monograf</option>
-                                            <option value=""></option>
+                                            <?php while ($p = mysqli_fetch_row($penelitian)) : ?>
+                                                <option><?= $p[1]; ?></option>
+                                            <?php endwhile; ?>
                                         </select>
                                         <span class="select2 select2-container select2-container--default select2-container--below select2-container--open" dir="ltr" style="width:877px;">
                                     </td>

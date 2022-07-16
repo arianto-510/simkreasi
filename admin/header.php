@@ -98,7 +98,7 @@ $u = mysqli_fetch_assoc($result);
                     <a href="#" class="btn btn-default btn-flat">Profile</a>
                   </div>
                   <div class="pull-right">
-                    <a href="logout.php" class="btn btn-default btn-flat">Sign out</a>
+                    <a href="logout.php?pesan=logout" class="btn btn-default btn-flat">Sign out</a>
                   </div>
                 </li>
               </ul>
@@ -131,30 +131,30 @@ $u = mysqli_fetch_assoc($result);
           <li>
             <a href="index.php"> <i class="fa fa-dashboard"></i> <span>dashboard</span> </a>
           </li>
-          
+
           <li>
             <a href="pendidikan.php">
               <i class="ion ion-calendar"></i> <span>Pelaksanaan Pendidikan</span>
-             </a>
+            </a>
           </li>
           <li>
             <a href="penelitian.php">
               <i class="ion ion-laptop"></i> <span>Pelaksanaan Penelitian</span>
-             </a>
+            </a>
           </li>
           <li>
             <a href="pengabdian.php">
               <i class="ion ion-briefcase"></i> <span>Pelaksanaan Pengabdian</span>
-             </a>
+            </a>
           </li>
           <li>
             <a href="penunjang.php">
               <i class="ion ion-pie-graph"></i> <span>Penunjang</span>
-             </a>
+            </a>
           </li>
-          
-            </ul>
-          </li>
+
+        </ul>
+        </li>
         </ul>
       </section>
       <!-- /.sidebar -->

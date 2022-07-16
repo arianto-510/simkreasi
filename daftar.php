@@ -13,6 +13,7 @@ if (isset($_POST['daftar'])) {
         document.location.href = 'daftar.php';
         </script>
         ";
+        exit;
     }
 
     $result  = mysqli_query($conn, "SELECT * FROM user");
@@ -25,6 +26,7 @@ if (isset($_POST['daftar'])) {
         document.location.href = 'daftar.php';
         </script>
         ";
+        exit;
     }
 
     if (strlen($pass) <= 6) {
@@ -34,6 +36,7 @@ if (isset($_POST['daftar'])) {
         document.location.href = 'daftar.php';
         </script>
         ";
+        exit;
     }
     $password = password_hash($pass, PASSWORD_DEFAULT);
     mysqli_query($conn, "INSERT INTO user VALUES(null, '$nama', '$user', '$password')");
