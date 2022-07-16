@@ -14,7 +14,7 @@ include '../koneksi.php';
                 <div class="box box-primary">
                     <div class="box-header">
                         <h3 class="box-title">Laporan Kinerja Unsur Penunjang 2021/2022 - Genap</h3>
-                        <a class="pull-right btn btn-primary" href="tambah_data_pengabdian.php">Tambah Data</a>
+                        <a class="pull-right btn btn-primary" href="tambah_data_penunjang.php">Tambah Data</a>
                     </div>
                     <div class="box-body">
                         <div class="row">
@@ -66,7 +66,7 @@ include '../koneksi.php';
                                                 <td><?= $p[3]; ?></td>
                                                 <td>
 
-                                                    <a href="edit_pengabdian.php"><button class="btn btn-warning btn-sm"><i class="glyphicon glyphicon-pencil"></i></button></a>
+                                                    <a href="edit_penunjang.php"><button class="btn btn-warning btn-sm"><i class="glyphicon glyphicon-pencil"></i></button></a>
                                                     <a href="pendidikan/hapus_pendidikan.php?id=<?= $p[0]; ?>" onclick="return confirm('Yakin mau dihapus');"><button class="btn btn-danger btn-sm"><i class="glyphicon glyphicon-trash"></i></button></a>
                                                 </td>
                                             </tr>

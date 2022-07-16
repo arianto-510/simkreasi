@@ -27,10 +27,25 @@ include '../koneksi.php';
                                 <th width='15%'>Unsur Kegiatan</th>
                                 <td>
                                     <select name="kategori" class="form-control">
-                                        <option value="">--Pilih Unsur Kegiatan--</option>
-                                        <option value="">Membuat rancangan dan karya teknologi yang dipatenkan atau seni yang terdaftar di HKI(beum diterapkan atau sudah diterapkan tetapi bukan pada BUMN)</option>
-                                        <option value="">Menghasikan karya ilmiah sesuai bidangnya buku Referensi</option>
-                                        <option value="">Menghasilkan karya ilmiah sesuai bidangnya Monograf</option>
+                                        <option>-- Pilih Unsur Kegiatan --</option>
+                                        <option>Menjadi anggota organisasi profesi tingkat Nasional</option>
+                                        <option>Menjadi pengurus organisasi profesi tingkat Nasional</option>
+                                        <option >Menjadi panitia tingkat Universitas sebagai Ketua</option>
+                                        <option >Menjadi panitia tingkat Universitas sebagai Wakil Ketua</option>
+                                        <option >Menjadi panitia tingkat Universitas sebagai Sekretaris</option>
+                                        <option >Menjadi panitia tingkat Universitas sebagai anggota</option>
+                                        <option >Menjadi panitia tingkat Fakultas sebagai Ketua</option>
+                                        <option >Menjadi panitia tingkat Fakultas sebagai Wakil Ketua</option>
+                                        <option >Menjadi panitia tingkat Fakultas sebagai Sekretaris</option>
+                                        <option >Menjadi panitia tingkat Fakultas sebagai anggota</option>
+                                        <option >Menjadi anggota panitia/badan pada lembaga pemerintah Panitia Pusat sebagai Ketua/Wakil Ketua</option>
+                                        <option >Menjadi anggota panitia/badan pada lembaga pemerintah Panitia Pusat sebagai Anggota</option>
+                                        <option >Menjadi anggota panitia/badan pada lembaga pemerintah Panitia Daerah sebagai Ketua/Wakil Ketua</option>
+                                        <option >Menjadi anggota panitia/badan pada lembaga pemerintah Panitia Daerah sebagai Anggota</option>
+                                        <option >Berperan serta aktif dalam pertemuan ilmiah tingkat Internasional/ Nasional/ Regional sebagai Ketua</option>
+                                        <option >Berperan serta aktif dalam pertemuan ilmiah tingkat Internasional/ Nasional/ Regional sebagai Anggota/ Peserta</option>
+                                        <option >Berperan serta aktif dalam pertemuan ilmiah di lingkungan Perguruan Tinggi sebagai Ketua</option>
+                                        <option >Berperan serta aktif dalam pertemuan ilmiah di lingkungan Perguruan Tinggi sebagai Anggota/ Peserta</option>
                                     </select>
                                 </td>
                             </tr>
@@ -58,18 +73,7 @@ include '../koneksi.php';
                                     <input type="text" class="form-control">
                                 </td>
                             </tr>
-                            <tr>
-                                <th width='15%'>Penulis Ke</th>
-                                <td>
-                                    <input type="text" class="form-control">
-                                </td>
-                            </tr>
-                            <tr>
-                                <th width='15%'>Jumlah Penulis</th>
-                                <td>
-                                    <input type="text" class="form-control">
-                                </td>
-                            </tr>
+                            
                             <tr>
                                 <th width='15%'>Keterangan</th>
                                 <td>

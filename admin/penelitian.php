@@ -19,8 +19,8 @@ include '../koneksi.php';
                     <div class="box-body">
                         <div class="row">
                             <div class="col-sm-6">
-                                <div class="dataTables_length" id="example1_length">
-                                    <label style="display: inline-block;">
+                                
+                                    <label>
                                         Show
                                         <select name="example1-length" aria-controls="example" class="form-control input-sm">
                                             <option value="10">10</option>
@@ -30,7 +30,7 @@ include '../koneksi.php';
                                         </select>
                                         entries
                                     </label>
-                                </div>
+                                
                             </div>
                             <div class="col-sm-6">
                                 <div id="example1_filter" class="dataTables_filter pull-right">
