@@ -10,19 +10,34 @@ if (isset($_POST['login'])) {
   $user = $_POST['user'];
   $pass = $_POST['pass'];
 
+<<<<<<< HEAD
+    $result = mysqli_query($conn, "SELECT * FROM user");
+    $u = mysqli_fetch_assoc($result);
+    if ($user === $u['user']) {
+        if (password_verify($pass, $u['password'])) {
+            $_SESSION['arianto'] = true;
+            echo "
+=======
   $result = mysqli_query($conn, "SELECT * FROM user");
   $u = mysqli_fetch_assoc($result);
   if ($u['user'] == $user) {
     if (password_verify($pass, $u['password'])) {
       $_SESSION['arianto'] = true;
       echo "
+>>>>>>> e75a061b7a74c4cad7a1b8c5ca71d224a77bf351
             <script>
             alert('Login Berhasil');
             document.location.href = 'admin/index.php';
             </script>
             ";
+<<<<<<< HEAD
+            exit;
+        }
+            echo "
+=======
     } else {
       echo "
+>>>>>>> e75a061b7a74c4cad7a1b8c5ca71d224a77bf351
         <script>
         alert('Login Gagal');
         header('login.php');
