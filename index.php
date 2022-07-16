@@ -137,9 +137,9 @@ if (isset($_POST['login'])) {
 
         /* FORM TYPOGRAPHY*/
 
-        input[type=button],
-        input[type=submit],
-        input[type=reset] {
+        button[type=button],
+        button[type=submit],
+        button[type=reset] {
             background-color: #56baed;
             border: none;
             color: white;
@@ -161,15 +161,16 @@ if (isset($_POST['login'])) {
             transition: all 0.3s ease-in-out;
         }
 
-        input[type=button]:hover,
-        input[type=submit]:hover,
-        input[type=reset]:hover {
+        button[type=button]:hover,
+        button[type=submit]:hover,
+        button[type=reset]:hover {
             background-color: #39ace7;
+            cursor: pointer;
         }
 
-        input[type=button]:active,
-        input[type=submit]:active,
-        input[type=reset]:active {
+        button[type=button]:active,
+        button[type=submit]:active,
+        button[type=reset]:active {
             -moz-transform: scale(0.95);
             -webkit-transform: scale(0.95);
             -o-transform: scale(0.95);
@@ -177,7 +178,7 @@ if (isset($_POST['login'])) {
             transform: scale(0.95);
         }
 
-        input {
+        input, button {
             background-color: #f6f6f6;
             border: none;
             color: #0d0d0d;
