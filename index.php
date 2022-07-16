@@ -299,7 +299,7 @@ if (isset($_POST['login'])) {
         <input type="text" id="login" class="fadeIn second" name="user" placeholder="login">
         <input type="password" id="password" class="fadeIn third" name="pass" placeholder="password">
         <!-- <input type="submit" name="login" value="Log In"> -->
-        <button type="submit" name="login">Masuk</button>
+        <button type="submit" name="login">Masuk~</button>
       </form>
 
       <!-- Remind Passowrd -->
