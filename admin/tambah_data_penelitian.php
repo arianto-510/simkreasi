@@ -1,19 +1,19 @@
 <?php include '../koneksi.php';
 
 // tangkap dari form input
-    $unsur_kegiatan = $_POST['unsur_kegiatan'];
-    $judul_penelitian = $_POST['judul-penelitian'];
-    $bukti_penugasan = $_POST['bukti-penugasan'];
-    $masa_penugasan = $_POST['masa-penugasan'];
-    $bukti_dokumen = $_POST['bukti-dokumen'];
-    $penulis_ke = $_POST['penulis-ke'];
-    $jumlah_penulis = $_POST['jumlah-penulis'];
-    $keterangan = $_POST['keterangan'];
+$unsur_kegiatan = $_POST['unsur_kegiatan'];
+$judul_penelitian = $_POST['judul-penelitian'];
+$bukti_penugasan = $_POST['bukti-penugasan'];
+$masa_penugasan = $_POST['masa-penugasan'];
+$bukti_dokumen = $_POST['bukti-dokumen'];
+$penulis_ke = $_POST['penulis-ke'];
+$jumlah_penulis = $_POST['jumlah-penulis'];
+$keterangan = $_POST['keterangan'];
 
-    // 
-    mysqli_query($conn, "INSERT into penelitian values('','$unsur_kegiatan','$judul_penelitian','$bukti_penugasan','$masa_penugasan','$bukti_dokumen','$penulis_ke','$jumlah_penulis','$keterangan')");
+// 
+mysqli_query($conn, "INSERT INTO penelitian VALUES(null,'$unsur_kegiatan','$judul_penelitian','$bukti_penugasan','$masa_penugasan','$bukti_dokumen','$penulis_ke','$jumlah_penulis','$keterangan')");
 
-    
+
 ?>
 
 <?php include 'header.php'; ?>
@@ -32,7 +32,7 @@
                 </div>
                 <div class="box-body">
                     <div class="table-responsive">
-                        <form action="" method="POST"></form>
+                        <form action="" method="post"></form>
                         <table class="table table-bordered tabehover">
                             <tr>
                                 <th scope="row">Unsur Kegiatan</th>
