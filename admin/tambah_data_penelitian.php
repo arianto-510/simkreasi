@@ -1,5 +1,6 @@
 <?php include '../koneksi.php';
 
+// tangkap dari form input
     $unsur_kegiatan = $_POST['unsur_kegiatan'];
     $judul_penelitian = $_POST['judul-penelitian'];
     $bukti_penugasan = $_POST['bukti-penugasan'];
@@ -9,6 +10,7 @@
     $jumlah_penulis = $_POST['jumlah-penulis'];
     $keterangan = $_POST['keterangan'];
 
+    // 
     mysqli_query($conn, "INSERT into penelitian values('','$unsur_kegiatan','$judul_penelitian','$bukti_penugasan','$masa_penugasan','$bukti_dokumen','$penulis_ke','$jumlah_penulis','$keterangan')");
 
     
