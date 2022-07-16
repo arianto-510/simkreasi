@@ -1,5 +1,6 @@
 <?php
 include '../koneksi.php';
+
 ?>
 
 <?php include 'header.php'; ?>
@@ -53,7 +54,7 @@ include '../koneksi.php';
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <?php $result = mysqli_query($conn, "SELECT * FROM pendidikan");
+                                        <?php $result = mysqli_query($conn, "SELECT * FROM penelitian");
 
                                         $i = 1;
                                         while ($p = mysqli_fetch_row($result)) :

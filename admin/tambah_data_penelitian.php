@@ -1,4 +1,18 @@
-<?php include '../koneksi.php' ?>
+<?php include '../koneksi.php';
+
+    $unsur_kegiatan = $_POST['unsur_kegiatan'];
+    $judul_penelitian = $_POST['judul-penelitian'];
+    $bukti_penugasan = $_POST['bukti-penugasan'];
+    $masa_penugasan = $_POST['masa-penugasan'];
+    $bukti_dokumen = $_POST['bukti-dokumen'];
+    $penulis_ke = $_POST['penulis-ke'];
+    $jumlah_penulis = $_POST['jumlah-penulis'];
+    $keterangan = $_POST['keterangan'];
+
+    mysqli_query($conn, "INSERT into penelitian values('','$unsur_kegiatan','$judul_penelitian','$bukti_penugasan','$masa_penugasan','$bukti_dokumen','$penulis_ke','$jumlah_penulis','$keterangan')");
+
+    
+?>
 
 <?php include 'header.php'; ?>
 <section class="content-header">
@@ -16,11 +30,12 @@
                 </div>
                 <div class="box-body">
                     <div class="table-responsive">
+                        <form action="" method="POST"></form>
                         <table class="table table-bordered tabehover">
                             <tr>
                                 <th scope="row">Unsur Kegiatan</th>
                                 <td>
-                                    <select name="" id="" class="form-control select2 select2-hidden-accessible" id="uns" name="uns" tabindex="-1" aria-hidden="true">
+                                    <select class="form-control select2 select2-hidden-accessible" id="uns" name="unsur_kegiatan" tabindex="-1" aria-hidden="true">
                                         <option value="" selected="">--Pilih Unsur Kegiatan--</option>
                                         <option value="">Menghasilkan karya ilmiah sesuai bidangnya Buku Referensi</option>
                                         <option value="">Menghasilkan karya ilmiah sesuai bisangnya Monograf</option>
@@ -31,40 +46,40 @@
                             </tr>
                             <tr>
                                 <th scope="row">Judul Penelitian</th>
-                                <td><input type="text" class="form-control" placeholder="Judul Penelitian" required></td>
+                                <td><input type="text" class="form-control" name="judul-penelitian" placeholder="Judul Penelitian" required></td>
                             </tr>
                             <tr>
                                 <th scope="row">Bukti Penugasan</th>
-                                <td><input type="text" class="form-control" placeholder="Bukti Penugasan" required></td>
+                                <td><input type="text" class="form-control" name="bukti-penugasan" placeholder="Bukti Penugasan" required></td>
                             </tr>
                             <tr>
                                 <th scope="row">Masa Penugasan</th>
                                 <td>
-                                    <input type="text" class="form-control" placeholder="Masa Penugasan" required>
+                                    <input type="text" class="form-control" name="masa-penugasan" placeholder="Masa Penugasan" required>
                                 </td>
                             </tr>
                             <tr>
                                 <th scope="row">Bukti Dokumen</th>
                                 <td>
-                                    <input type="text" class="form-control" placeholder="Bukti Dokumen" required>
+                                    <input type="text" class="form-control" name="bukti-dokumen" placeholder="Bukti Dokumen" required>
                                 </td>
                             </tr>
                             <tr>
                                 <th scope="row">Penulis Ke</th>
                                 <td>
-                                    <input type="text" class="form-control" placeholder="Penuis Ke" required>
+                                    <input type="text" class="form-control" name="penulis-ke" placeholder="Penuis Ke" required>
                                 </td>
                             </tr>
                             <tr>
                                 <th scope="row">Jumlah Penulis</th>
                                 <td>
-                                    <input type="text" class="form-control" placeholder="Jumlah Penuis" required>
+                                    <input type="text" class="form-control" name="jumlah-penulis" placeholder="Jumlah Penuis" required>
                                 </td>
                             </tr>
                             <tr>
                                 <th scope="row">Keterangan</th>
                                 <td>
-                                    <select name="kategori" class="form-control">
+                                    <select name="kategori" class="form-control" name="keterangan">
                                         <option value="">--Pilih Keterangan--</option>
                                         <option value="">Selesai/Lanjut</option>
                                         <option value="">Gagal</option>
