@@ -5,12 +5,12 @@ include '../koneksi.php';
 <?php include 'header.php'; ?>
 <section class="content-header">
     <h1>
-        Pendidikan
-        <small>Control panel</small>
-    </h1>
+    Dashboard
+    <small>Control panel</small>
+  </h1>
 
 
-    <div class="container-fluid">
+    <div class="container-fluid" style="padding-top: 15px;">
         <div class="row">
             <div class="box box-primary">
                 <div class="box-header">

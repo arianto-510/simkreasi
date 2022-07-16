@@ -6,10 +6,10 @@ include '../koneksi.php';
 <section>
     <section class="content-header">
         <h1>
-            Pendidikan
-            <small>Control panel</small>
-        </h1>
-        <div class="container-fluid">
+    Dashboard
+    <small>Control panel</small>
+  </h1>
+        <div class="container-fluid" style="padding-top: 15px;">
             <div class="row">
                 <div class="box box-primary">
                     <div class="box-header">
@@ -81,3 +81,4 @@ include '../koneksi.php';
 
 
     </section>
+    <?php include 'footer.php'; ?>

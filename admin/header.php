@@ -60,9 +60,9 @@ $u = mysqli_fetch_assoc($result);
       <!-- Logo -->
       <a href="index2.html" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
-        <span class="logo-mini"><b>A</b>LT</span>
+        <span class="logo-lg"><b>SIMKREASI</b> USN</span>
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg"><b>Admin</b>LTE</span>
+        <span class="logo-mini"><b>USN</b></span>
       </a>
       <!-- Header Navbar: style can be found in header.less -->
       <nav class="navbar navbar-static-top">
@@ -129,7 +129,7 @@ $u = mysqli_fetch_assoc($result);
         <ul class="sidebar-menu" data-widget="tree">
           <li class="header">MENU DOSEN</li>
           <li>
-            <a href="#"> <i class="fa fa-dashboard"></i> <span>dashboard</span> </a>
+            <a href="index.php"> <i class="fa fa-dashboard"></i> <span>dashboard</span> </a>
           </li>
           
           <li>
